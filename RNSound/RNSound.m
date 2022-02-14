@@ -178,13 +178,13 @@ RCT_EXPORT_METHOD(setCategory
             if (duckOthers) {
                 [session setCategory:category
                      withOptions:AVAudioSessionCategoryOptionDuckOthers
-                                error:nil];
+                        error:nil];
             }
             else{
                 [session setCategory:category
                      withOptions:AVAudioSessionCategoryOptionMixWithOthers |
-                                 AVAudioSessionCategoryOptionAllowBluetooth
-                           error:nil];
+                        AVAudioSessionCategoryOptionAllowBluetooth
+                        error:nil];
             }
         } else {
             [session setCategory:category error:nil];
